@@ -11,6 +11,7 @@ public class TipAction extends ActionSupport {
 	
 	public String execute(){
 		calculate();
+		System.out.println("git practice");
 		return SUCCESS;
 	}
 	
