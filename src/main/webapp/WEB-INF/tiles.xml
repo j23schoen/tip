@@ -1,0 +1,17 @@
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+	
+<tiles-definitions>
+
+	<definition name = "base-tile" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name = "header-tile" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name = "body-tile" value="/WEB-INF/jsp/empty.jsp" />
+		<put-attribute name = "footer-tile" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+	<definition name = "tip" extends="base-tile">
+		<put-attribute name = "body-tile" value="/WEB-INF/jsp/tip.jsp" />
+	</definition>
+		
+</tiles-definitions>
